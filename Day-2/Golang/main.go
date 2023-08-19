@@ -14,7 +14,6 @@ func roundOff(number float64, decimal int) float64 {
 	return math.Round(number*shift) / shift
 }
 func main() {
-	fmt.Scanln()
 	fmt.Println("Welcome to the Tip Calculator.")
 	//Prompt the User for the Total Bill
 	reader1 := bufio.NewReader(os.Stdin)
