@@ -27,6 +27,7 @@ scissors = '''
       (____)
 ---.__(___)
 '''
+print("Welcome to the Rock Paper Scissor Game!!")
 #We will initialise a list for the images, Note that the index will start from 0
 images = [rock, paper, scissors]
 #Ask the user for a choice between Rock, Paper and Scissors
