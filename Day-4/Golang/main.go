@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"os"
 )
 
 func main() {
@@ -42,6 +43,11 @@ func main() {
 	//Prompt the user for choice
 	fmt.Println("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.")
 	_, _ = fmt.Scanf("%d", &choice)
+	//Make Error Handling
+	if choice >= 3 {
+		fmt.Println("The Choice is invalid")
+		os.Exit(1)
+	}
 	//Generate random number between the range 0 to 2
 	computer := rand.Intn(2)
 	//Display the user's choice
